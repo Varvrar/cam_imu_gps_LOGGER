@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045E0002212BF794001B7D94 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E0001212BF794001B7D94 /* CoreMotion.framework */; };
+		045E0004212BF7A9001B7D94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E0003212BF7A9001B7D94 /* CoreLocation.framework */; };
+		045E0006212BFA68001B7D94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E0005212BFA68001B7D94 /* UIKit.framework */; };
+		045E0008212BFF73001B7D94 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E0007212BFF73001B7D94 /* MobileCoreServices.framework */; };
 		045EFFEC212BF489001B7D94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045EFFEB212BF489001B7D94 /* AppDelegate.m */; };
 		045EFFEF212BF489001B7D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045EFFEE212BF489001B7D94 /* ViewController.m */; };
 		045EFFF2212BF489001B7D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045EFFF0212BF489001B7D94 /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045E0001212BF794001B7D94 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		045E0003212BF7A9001B7D94 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		045E0005212BFA68001B7D94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		045E0007212BFF73001B7D94 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		045EFFE7212BF489001B7D94 /* cam_imu_gps_LOGGER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cam_imu_gps_LOGGER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045EFFEA212BF489001B7D94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		045EFFEB212BF489001B7D94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +41,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045E0008212BFF73001B7D94 /* MobileCoreServices.framework in Frameworks */,
+				045E0006212BFA68001B7D94 /* UIKit.framework in Frameworks */,
+				045E0004212BF7A9001B7D94 /* CoreLocation.framework in Frameworks */,
+				045E0002212BF794001B7D94 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045E0000212BF793001B7D94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045E0007212BFF73001B7D94 /* MobileCoreServices.framework */,
+				045E0005212BFA68001B7D94 /* UIKit.framework */,
+				045E0003212BF7A9001B7D94 /* CoreLocation.framework */,
+				045E0001212BF794001B7D94 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		045EFFDE212BF489001B7D94 = {
 			isa = PBXGroup;
 			children = (
 				045EFFE9212BF489001B7D94 /* cam_imu_gps_LOGGER */,
 				045EFFE8212BF489001B7D94 /* Products */,
+				045E0000212BF793001B7D94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
